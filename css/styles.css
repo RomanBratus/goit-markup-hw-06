@@ -319,7 +319,7 @@ margin-right: 10px;
 /* .basement-label{} */
 
 .basement-input{
-        background-color: transparent;
+    background-color: transparent;
     font-style: sans-serif;
     font-size: 16px;
     line-height: 1.25;
@@ -327,16 +327,26 @@ margin-right: 10px;
 
     align-content: center;
     height: 50px;
+    width: 358px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    margin-right: 12px;
+
+/*     padding: ; */
+}
+
+.basement-btn-submit{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    padding: 0 24px;
 }
 
 /* .basement-button-icon{} */
-
-/* .basement-btn-submit{} */
-
 
 /* ++++++++++++++ main index.html (основний контент index.html) ++++++++++++++ */
 /* =========================== HERO section (герой) ===========================*/
