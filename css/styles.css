@@ -455,7 +455,45 @@ margin-right: 10px;
     letter-spacing: 0.03em;
     color: var(--primery-text-color);
 
+    margin-bottom: 12px;
 }
+
+.modal-group{
+    list-style: none;
+}
+
+.modal-list{
+    margin-bottom: 10px;
+}
+
+.modal-label{
+    display: flex;
+    flex-direction: column;
+    color: var(--paragraph-tex-color);
+}
+
+.modal-input{
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+.modal-comment{
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.modal-licence{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.modal-container-btn{
+    display: flex;
+    justify-content: center;
+}
+
+/* .modal-submit-btn {} */
 
 /* -==================== our-features (текст під банером) ==================== */
 .our-features {padding-top: 94px;}
