@@ -96,6 +96,7 @@
             >
               Замовити послугу
             </button>
+            <!-- Приховане вікно з формою -->
             <div class="backdrop is-hidden" data-modal>
               <div class="modal-window">
                 <button type="button" class="close-button" data-modal-close>
@@ -105,17 +106,24 @@
                     ></use>
                   </svg>
                 </button>
-                <h3 class="modal-title">
+                <p class="modal-title">
                   Залиште свої дані, ми вам передзвонимо
-                </h3>
-                <ul class="modal-group">
-                  <li class="modal-list">
+                </p>
+                <div class="modal-group">
+                  <div class="modal-list">
                     <label class="modal-label" for="user-name"
                       >Ім'я
-                      <input class="modal-input" type="text" name="user-name" autofocus/>
+                      <input class="modal-input" type="text" name="user-name" />
                     </label>
-                  </li>
-                  <li class="modal-list">
+                    <span>
+                      <svg class="modal-input-icon" width="12" height="12">
+                        <use
+                          href="./images/icomoon/symbol-defs.svg#icon-person-black"
+                        ></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="modal-list">
                     <label class="modal-label" for="phone-number"
                       >Телефон
                       <input
@@ -124,24 +132,35 @@
                         name="phone-number"
                       />
                     </label>
-                  </li>
-                  <li class="modal-list">
+                    <svg class="modal-input-icon" width="12" height="12">
+                      <use
+                        href="./images/icomoon/symbol-defs.svg#icon-phone-black"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="modal-list">
                     <label class="modal-label" for="email"
                       >Пошта
                       <input class="modal-input" type="email" name="email" />
                     </label>
-                  </li>
-                  <li class="modal-list">
+                    <svg class="modal-input-icon" width="12" height="12">
+                      <use
+                        href="./images/icomoon/symbol-defs.svg#icon-email-black"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="modal-list">
                     <label class="modal-label" for="user-comment"
                       >Коментар
-                      <input
-                        class="modal-input modal-comment"
-                        type="text"
+                      <textarea
+                        class="modal-comment"
                         name="user-comment"
-                      />
+                        placeholder="Введіть текст"
+                        rows="8"
+                      ></textarea>
                     </label>
-                  </li>
-                </ul>
+                  </div>
+                </div>
                 <div class="modal-licence">
                   <label class="licence-checkbox hover-transition">
                     <input type="checkbox" name="licence" />
