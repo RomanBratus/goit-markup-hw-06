@@ -450,6 +450,11 @@ margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
+}
+.close-button:hover .modal-icon{
+    fill: var(--text-hover-color);
 }
 
 .modal-title{
@@ -470,17 +475,21 @@ margin: 0;
 
 .modal-list{
     margin-bottom: 10px;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+}
 .modal-list:last-child{
     margin: 0;
 }
 
 .modal-label{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-
     color: var(--paragraph-tex-color);    
     font-family: sans-serif;
     font-size: 12px;
@@ -490,23 +499,46 @@ margin: 0;
     fill: var(--primery-text-color);
 }
 
-.modal-label input{
+.input-container{
+    fill: var(--primery-text-color);
+    position: relative;
+}
+
+.input-container:hover,
+.input-container:focus{
+    border-color: var(--text-hover-color);
+}
+
+
+.input-container input{
     padding: 12px 16px;
     padding-left: 42px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    width: 100%;
+}
+
+/* .input-container input:hover{
+    fill: var(--text-hover-color);
+    border-color: var(--text-hover-color);
+} */
+
+.modal-input:hover,
+.modal-input:focus,
+.modal-comment:hover,
+.modal-comment:focus{
+    border-color: var(--text-hover-color);
+}
+.modal-input:hover + .modal-input-icon{
+    fill: var(--text-hover-color);
 }
 
 .modal-input-icon {
-    background-color: #212121;
-}
-
-/* ховер та філл для svg */
-.modal-label:hover input,
-.modal-label:focus input{
-    fill: var(--text-hover-color);
-    border-color: var(--text-hover-color);
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
 }
 
 .modal-comment{
