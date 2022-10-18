@@ -592,8 +592,9 @@ margin: 0;
 
 .checkbox-input-icon{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .licence-text{
@@ -607,10 +608,11 @@ margin: 0;
     color: var(--paragraph-tex-color);
 }
 .licence{
-    text-decoration: underline;
+/*     text-decoration: underline; */
     color: var(--text-hover-color);
     margin: 0;
     padding: 0;
+    border-bottom: 1px solid var(--text-hover-color);
 }
 
 .modal-container-btn{
