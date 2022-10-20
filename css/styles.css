@@ -510,10 +510,12 @@ margin: 0;
 .modal-input:hover + .modal-input-icon,
 .modal-input:focus,
 .modal-comment:focus,
-.modal-input:focus + .modal-input-icon {
+.modal-input:focus + .modal-input-icon{
     border-color: var(--text-hover-color);
     fill: var(--text-hover-color);
 }
+
+
 
 
 .input-container input{
