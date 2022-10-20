@@ -505,16 +505,15 @@ margin: 0;
     position: relative;
 }
 
-.modal-input:hover,
+.input-container:hover input,
+.input-container:hover  .modal-input-icon,
 .modal-comment:hover,
-.modal-input:hover + .modal-input-icon,
-.modal-input:focus,
+.input-container input:focus,
 .modal-comment:focus,
 .modal-input:focus + .modal-input-icon{
     border-color: var(--text-hover-color);
     fill: var(--text-hover-color);
 }
-
 
 
 
