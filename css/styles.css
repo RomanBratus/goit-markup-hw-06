@@ -505,10 +505,13 @@ margin: 0;
     position: relative;
 }
 
-.input-container:hover,
-.input-container:focus{
+/* .input-container:hover input,
+.input-container:focus input, 
+.input-container:hover .modal-input-icon,
+.input-container:focus .modal-input-icon{
     border-color: var(--text-hover-color);
-}
+    fill: var(--text-hover-color);
+} */
 
 
 .input-container input{
@@ -520,18 +523,16 @@ margin: 0;
     width: 100%;
 }
 
-/* .input-container input:hover{
-    fill: var(--text-hover-color);
-    border-color: var(--text-hover-color);
-} */
+
 
 .modal-input:hover,
 .modal-input:focus,
 .modal-comment:hover,
-.modal-comment:focus{
+.modal-comment:focus,
+.modal-input:hover + .modal-input-icon,
+.modal-input:focus + .modal-input-icon
+{
     border-color: var(--text-hover-color);
-}
-.modal-input:hover + .modal-input-icon{
     fill: var(--text-hover-color);
 }
 
