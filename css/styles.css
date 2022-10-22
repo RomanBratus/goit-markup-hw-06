@@ -506,6 +506,7 @@ margin: 0;
     position: relative;
 }
 
+.modal-label,
 .input-container:hover input,
 .input-container:hover  .modal-input-icon,
 .modal-comment:hover,
@@ -515,6 +516,7 @@ margin: 0;
 .modal-input:focus + .modal-input-icon{
     border-color: var(--text-hover-color);
     fill: var(--text-hover-color);
+    outline: var(--text-hover-color);
 }
 
 
